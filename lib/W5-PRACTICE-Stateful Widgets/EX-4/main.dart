@@ -72,7 +72,6 @@ class _ScoreWidgetState extends State<ScoreWidget> {
 
       padding: const EdgeInsets.all(15),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             "My score in ${widget.subject}",
