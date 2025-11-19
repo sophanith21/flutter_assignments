@@ -12,17 +12,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.lightGreenAccent,
-        padding: const EdgeInsets.all(10),
-        width: double.infinity,
-        child: Column(
-          spacing: 15,
-          children: [
-            ScoreWidget(subject: "Flutter"),
-            ScoreWidget(subject: "Dart"),
-            ScoreWidget(subject: "React"),
-          ],
+      backgroundColor: Colors.lightGreenAccent,
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Column(
+            spacing: 15,
+            children: [
+              ScoreWidget(subject: "Flutter"),
+              ScoreWidget(subject: "Dart"),
+              ScoreWidget(subject: "React"),
+            ],
+          ),
         ),
       ),
     );
